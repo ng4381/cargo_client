@@ -1,0 +1,24 @@
+.container {
+    color: blue;
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 60px auto;
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "i i t t t t t t t t t t";
+}
+
+.header_area {
+    grid-area: h;
+}
+
+.input_area {
+    grid-area: i;
+    background-color: bisque;
+}
+
+.info_area {
+    grid-area: t;
+}
